@@ -1,0 +1,470 @@
+.section-home {
+  width: 100%;
+  height: auto;
+  background-image: url(../../assets/home/desktop/image-hero.jpg);
+  background-position: center;
+  overflow: hidden;
+}
+.home-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: white;
+  width: 95vw;
+  padding: 225px 0 158px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.home-container-info {
+  height: 346px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.home-container-info h4 {
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+.home-container-info p {
+  opacity: 0.75;
+  width: 349px;
+}
+
+.home-btn {
+  background-color: var(--orange-background);
+}
+.home-btn:hover {
+  background-color: var(--orange-background-hover);
+}
+
+.products {
+  width: 100%;
+  height: auto;
+  margin: 127px 0 168px 0;
+  overflow: hidden;
+}
+
+.product-container {
+  max-width: 1400px;
+  width: 95vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section-home {
+    background-image: url(../../assets/home/tablet/image-header.jpg);
+    background-size: contain;
+  }
+  .home-container {
+    padding: 216px 0 167px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-container-info {
+    height: 346px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-home {
+    background-image: url(../../assets/home/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .home-container {
+    padding: 198px 0px 112px 0px;
+  }
+  .home-container-info {
+    height: 290px;
+  }
+  .home-container-info p {
+    width: 100%;
+  }
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* see producst */
+.speaker-Z {
+  width: 100%;
+  height: auto;
+  margin-bottom: 48px;
+  overflow: hidden;
+}
+
+.speaker-Z-container {
+  background: var(--orange-background);
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 95vw;
+  height: 100%;
+  padding: 133px 0 124px 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  z-index: 1;
+  border-radius: var(--border-radius);
+}
+.speaker-Z-container::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -30%;
+  content: "";
+  background-image: url(../../assets/home/desktop/pattern-circles.svg);
+  background-position: left center;
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.speaker-info {
+  height: 303px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+.spkInfo {
+  flex-basis: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.speaker-info p {
+  width: 349px;
+  opacity: 0.75;
+}
+
+.product-btn {
+  background: var(--black-background);
+  transition: var(--transition);
+}
+
+.product-btn:hover {
+  transition: var(--transition);
+  background: #4c4c4c;
+}
+
+.speaker-img {
+  width: auto;
+  height: auto;
+  position: relative;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-speaker {
+  height: 493px;
+  width: 410.23px;
+  position: absolute;
+  background-image: url(../../assets/home/desktop/image-speaker-zx9.png);
+  background-size: cover;
+}
+/* Zx7 speaker */
+.section-Z7 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 48px;
+  overflow: hidden;
+}
+
+.Z7-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 95vw;
+  padding: 101px 0;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  background-image: url(../../assets/home/desktop/image-speaker-zx7.jpg);
+}
+.Z7-btn {
+  background: transparent;
+  border: 2px solid var(--black-background);
+  transition: var(--transition);
+  color: var(--black-background) !important;
+}
+.Z7-btn:hover {
+  border: none;
+  background: var(--black-background);
+  color: var(--white-color) !important;
+}
+.Z7-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 95px;
+}
+
+.Z7-info h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.25px;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1000px) {
+  .spkInfo {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .speaker-img {
+    justify-content: center;
+  }
+
+  .img-speaker {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .speaker-Z::after {
+    left: 0;
+  }
+  .speaker-Z-container {
+    padding: 52px 0px 64px 0px;
+    flex-direction: column;
+  }
+  .speaker-img,
+  .spkInfo {
+    flex-basis: 100%;
+    align-items: center;
+  }
+  .speaker-img {
+    margin-bottom: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .spkInfo {
+    align-items: center;
+  }
+  .speaker-info {
+    align-items: center;
+    text-align: center;
+    height: 250px;
+  }
+  .img-speaker {
+    background-image: url(../../assets/home/tablet/image-speaker-zx9.png);
+    position: relative;
+    height: 237px;
+    width: 197.21px;
+    left: 0;
+    top: 0;
+  }
+  .Z7-container {
+    background-image: url(../../assets/home/tablet/image-speaker-zx7.jpg);
+  }
+  .Z7-info {
+    padding-left: 62px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .speaker-Z-container {
+    padding: 55px 0;
+  }
+  .speaker-img {
+    margin-bottom: 32px;
+  }
+  .speaker-Z::after {
+    background-size: contain;
+    top: 0;
+    left: 0;
+  }
+  .Z7-container {
+    background-image: url(../../assets/home/mobile/image-speaker-zx7.jpg);
+  }
+  .Z7-info {
+    padding-left: 24px;
+  }
+}
+
+.earphone-Z {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.earphone-Z-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.Z-earphone {
+  height: 320px;
+  background-image: url(../../assets/home/desktop/image-earphones-yx1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.earphone-container-info {
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--ash-background);
+}
+.earphone-container-info h2 {
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 2px;
+}
+
+.earphone-btn {
+  color: var(--black-background) !important;
+  transition: var(--transition);
+  margin-top: 32px;
+  border: 2px solid black;
+}
+
+.earphone-btn:hover {
+  border: none;
+  background: var(--black-background);
+  color: var(--white-color) !important;
+}
+
+/* bringing the gear */
+.bringing {
+  width: 100%;
+  height: auto;
+  margin: 200px 0;
+}
+
+.bring-container {
+  max-width: 1400px;
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bring-info {
+  flex-basis: 50%;
+  display: flex;
+  width: 100%;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.bring-info p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.bring-info h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.bring-info span {
+  color: var(--orange-background);
+}
+
+.bring-img {
+  flex-basis: 50%;
+  background-image: url(../../assets/shared/desktop/image-best-gear.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 588px;
+  border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 768px) {
+  .Z-earphone {
+    background-image: url(../../assets/home/tablet/image-earphones-yx1.jpg);
+  }
+
+  .earphone-container-info {
+    align-items: flex-start;
+    padding-left: 62px;
+  }
+  .bringing {
+    margin: 92px 0;
+  }
+  .bring-container {
+    flex-direction: column-reverse;
+    height: 633px;
+  }
+  .bring-img {
+    flex-basis: 100%;
+    height: 300px;
+    width: 100%;
+    background-image: url(../../assets/shared/tablet/image-best-gear.jpg);
+  }
+  .bring-info {
+    flex-basis: 100%;
+    margin: 0;
+    text-align: center;
+    width: 573px;
+  }
+  .bring-info h2 {
+    margin-top: 62px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .earphone-Z-container {
+    grid-template-columns: 1fr;
+  }
+  .Z-earphone {
+    background-image: url(../../assets/home/mobile/image-earphones-yx1.jpg);
+  }
+  .earphone-container-info {
+    height: 200px;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .bring-container {
+    height: 658px;
+  }
+  .bring-info {
+    width: 100%;
+  }
+  .bring-img {
+    background-image: url(../../assets/shared/mobile/image-best-gear.jpg);
+    height: 300px !important;
+  }
+  .bring-info h2 {
+    font-size: 28px;
+    line-height: 38.25px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .bring-container {
+    height: 800px;
+  }
+}

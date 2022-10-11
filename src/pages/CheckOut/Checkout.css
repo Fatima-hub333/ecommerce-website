@@ -1,0 +1,380 @@
+.check {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.checkContainer {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 141px;
+  position: relative;
+}
+
+.thanks {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -100000;
+  opacity: 0;
+  transition: var(--transition);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 540px;
+  padding: 48px;
+  z-index: 999;
+}
+.items-container {
+  display: flex;
+}
+
+.productCheck {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  flex-basis: 60%;
+  padding: 0 10px;
+}
+
+.itemsInfo .cartInfo-items {
+  align-items: flex-start;
+}
+
+.grandingTotal {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 40%;
+}
+
+.order {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.priceInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 33px;
+}
+
+.priceInformation h4 {
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.priceInformation h4:nth-child(2) {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 24.59px;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.showthanks {
+  top: 0;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.thanks-img {
+  width: 64px;
+  height: 64px;
+  display: flex;
+}
+
+.thanks-img i {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cartInfo-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.less {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.less p {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16.39px;
+  letter-spacing: -0.21px;
+  opacity: 0.7;
+}
+
+.itemsInfo {
+  padding: 12px 0;
+  border-bottom: 1px solid #cfcfcf;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
+}
+.qtyContainer-items {
+  display: flex;
+  justify-content: flex-end;
+}
+.checkout-container {
+  display: flex;
+}
+
+.checkoutHeader {
+  margin-bottom: 41px;
+  font-weight: 700;
+}
+.detailsHeader {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--orange-background);
+  line-height: 25px;
+  letter-spacing: 0.93px;
+  margin-bottom: 16px;
+}
+.checkForms {
+  background-color: #ffffff;
+  padding: 54px 48px;
+  border-radius: var(--border-radius);
+  width: 100%;
+  margin-right: 2rem;
+  flex-basis: 70%;
+}
+
+.special {
+  height: 0;
+  overflow: hidden;
+}
+
+.summary {
+  flex-basis: 30%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.summary-container {
+  padding: 32px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.cal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.grand {
+  margin: 24px 0 32px 0;
+}
+
+.cal p {
+  font-weight: 400 !important;
+}
+
+.cal h4 {
+  font-size: 18px;
+  line-height: 24.59px;
+  font-weight: 700;
+}
+
+.qtyContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.qtyContainer p {
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.formRow {
+  margin-bottom: 24px 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.labels label,
+.labels p {
+  font-size: 12px;
+  letter-spacing: 0.21px;
+  line-height: 16.39px;
+}
+
+.labels label {
+  font-weight: 700;
+}
+.labels p {
+  font-size: 200;
+  opacity: 1 !important;
+  color: #cd2c2c;
+  margin: 0;
+}
+.input {
+  margin-bottom: 24px;
+}
+
+.input input {
+  width: 100%;
+  padding: 18px 24px;
+  border: 1px solid #cfcfcf;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.12px;
+  letter-spacing: -0.25px;
+  transition: 0.2s;
+  outline: none;
+}
+
+.showError input {
+  border: 1.5px solid #cd2c2c;
+}
+
+.showErrors {
+  border: 1.5px solid #cd2c2c;
+}
+
+.radios {
+  padding: 18px 24px;
+  border: 1px solid #cfcfcf;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.12px;
+  transition: 0.2s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.radios:hover {
+  box-shadow: 0 0 0 1pt #d87d4a;
+  transition: 0.1s;
+}
+
+.radios label {
+  font-weight: 700 !important;
+}
+
+.radios:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+input[type="radio"] {
+  margin-right: 15px;
+}
+
+.input input:focus,
+.input input:hover,
+.radios:focus-within {
+  box-shadow: 0 0 0 1pt #d87d4a;
+  transition: 0.1s;
+}
+
+.errorLabel {
+  color: #cd2c2c;
+}
+.showError input:focus,
+.showError input:hover {
+  border: none;
+  box-shadow: 0 0 0 1pt #cd2c2c;
+}
+
+input::placeholder {
+  opacity: 0.4;
+}
+
+.shipping {
+  margin: 50px 0;
+}
+
+.labels p {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .checkForms {
+    flex-basis: 60%;
+  }
+  .summary {
+    flex-basis: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+  .checkForms {
+    padding: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .checkContainer {
+    margin-bottom: var(--margin-buttom-mobile);
+  }
+  .checkForms {
+    padding: 15px 5px;
+  }
+  .summary-container {
+    padding: 15px 5px;
+  }
+  .thanks {
+    width: 95vw;
+  }
+  .items-container {
+    flex-direction: column;
+  }
+  .productCheck {
+    margin-bottom: 20px;
+  }
+
+  .priceInformation {
+    padding: 24px;
+  }
+
+  .priceInformation {
+    margin: 0;
+  }
+  .priceInformation h4:nth-child(2) {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .showthanks {
+    padding: 32px 15px;
+  }
+}

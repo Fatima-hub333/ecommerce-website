@@ -1,0 +1,245 @@
+@import "./components/Navbar/Navbar.css";
+@import "./pages/Home/Home.css";
+@import "./components/Footer/Footer.css";
+@import "./components/ProductHero/Hero.css";
+@import "./components/ProductHero/DetailsCategory.css";
+@import "./pages/SingleProduct/SingleProduct.css";
+@import "./pages/CheckOut/Checkout.css";
+@import "./pages/CheckOut/pretty.min.css";
+@import "./components/ProductCategory/ProductInfo.css";
+@import "./components/ProductFeatures/ProductFeatures.css";
+@import "./components/ProductGalleries/ProductGalleries.css";
+@import "./components/Like/Like.css";
+@import "./components/Cart/Cart.css";
+
+* {
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --orange-background: #d87d4a;
+  --orange-background-hover: #fbaf85;
+  --white-background: #fff;
+  --black-background: #191919;
+  --white-color: #ffffff;
+  --ash-background: #f1f1f1;
+  --border-radius: 8px;
+  --transition: 0.5s ease-in-out;
+  --margin-buttom: 160px;
+  --margin-buttom-mobile: 88px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38.25px;
+  letter-spacing: 2px;
+  color: black;
+}
+
+p {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.btns {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  color: #fff;
+  width: 160px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  display: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: var(--transition);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 999; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  margin: 0 auto;
+}
+
+.overlay-active {
+  display: block;
+  opacity: 0.9;
+  transition: var(--transition);
+}
+
+/* Disable spinners in input type numbers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Shared css */
+
+/* Mobile Navigation */
+.mobileCategoryContainer {
+  overflow: hidden;
+  height: 212px;
+  width: 327px;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.homeCategoryInfo:hover .mobileCategorySection p,
+.mobileCategoryInfo:hover .mobileCategorySection p {
+  color: var(--orange-background);
+  transition: var(--transition);
+}
+
+.homeCategoryContainer {
+  height: 276.5px;
+  text-decoration: none;
+  width: 350px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.homeCategoryInfo {
+  height: 204px;
+  padding: 116px 0px 30px 0px;
+  background: var(--ash-background);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.homeCategoryInfo h3 {
+  margin-bottom: 17px;
+}
+
+.mobileCategoryInfo {
+  height: 165px;
+  background: var(--ash-background);
+  padding: 88px 0px 57px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.mobileCategoryInfo h3 {
+  font-size: 15px;
+  line-height: 20.49px;
+  letter-spacing: 1.07px;
+  font-weight: 700;
+}
+.mobileCategorySection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.mobileCategorySection p {
+  font-size: 13px !important;
+  font-weight: 700;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  opacity: 50%;
+  color: black;
+}
+.mobileCategorySection p span {
+  margin-left: 10px;
+}
+
+.mobileimage {
+  width: 79.92px;
+  height: 52px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.homeimage {
+  width: 122.95px;
+  height: 72px;
+  position: relative;
+  margin: 0 auto;
+}
+.img-home {
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  top: 20%;
+}
+
+.img {
+  position: absolute;
+  height: 104px;
+  top: 20%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img img,
+.img-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .homeCategoryContainer {
+    width: 223px;
+  }
+  h3 {
+    font-size: 15px;
+    line-height: 20.49px;
+    letter-spacing: 1.07px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 17.76px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+  }
+}
