@@ -4,9 +4,9 @@
 
 A Fully fledged E-Commerce developed using React Framework. AudioPib sells gadgets like Heaphones, EarPhones, Speakers of all models
 
-![screenshot](preview.png)
+![screenshot](ecommerce-website-preview.png)
 
-## [LiveDemo](https://color-website-delta.vercel.app/)
+## [LiveDemo](https://ecommerce-website-ixmh.vercel.app/)
 
 ## Built With
 
