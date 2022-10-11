@@ -1,17 +1,66 @@
-AudioPhile E-Commerce Website was created using React, FaceBook made Javascript Framework. Template design downloaded from Frontend Mentor as a pro subscription.
-Fews of the technologies used for this Project are:
+![](https://img.shields.io/badge/Audiopib-blueviolet)
 
-1. The React Hook Form: The React Hook form is one of the library used for this project. React Hook Forms basically helps with validations and avoid controlled input. Validations are done onTrigger, either text change, tab change, onchange itself. This is really a great tool as it helps in developing the projec more faster.
+# Ecommerce Website
 
-2. Pretty-Checkbox: The Pretty checkbox is a css file downloaded from dev's github account. As we all know, it somehow hard to style native radio buttons including checboxes. so this library was used as well to style radio buttons used in the project
+A Fully fledged E-Commerce developed using React Framework. AudioPib sells gadgets like Heaphones, EarPhones, Speakers of all models
 
-one of the features of this project is that it used localstorage to save items that as been added into cart. no matter how refreshed your refresing your browser, items added would still be inside localstorage unless you remove them manually or when purchase has been made successfully.
+![screenshot](preview.png)
 
-React hooks used are
-  1. useState
-  2. useEffect
-  3. useContext: managing data globally. equivalent to the redux when joined with the useReducer hooks
-  4. useHistory,Link coming from react-router-dom library
-  5. json data used locally
+## [LiveDemo](https://color-website-delta.vercel.app/)
 
-3. Animate on scroll was not also excluded as it was used to animate contents in the applications.
+## Built With
+
+- HTML, CSS
+- JavaScript
+- Stylelint, Web Hint, Lighthouse
+
+
+## Getting Started
+To get a local copy up and running, follow the steps in Setup below.
+
+### Prerequisites
+Basic knowledge of HTML, CSS.
+
+### Setup
+If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
+
+[Download the ZIP from this location](https://github.com/Fatima-hub333/Ecommerce-Website/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+
+```bash
+git clone https://github.com/Fatima-hub333/Ecommerce-Website.git
+```
+
+- Once the files are on your machine, open the _Portfolio_ folder in [Visual Studio Code](https://code.visualstudio.com/).
+
+- With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+### Install
+
+The following tools help make easier to work with sample code.
+
+- [git](https://git-scm.com/downloads): A tool for managing source code
+- [Visual Studio Code](https://code.visualstudio.com/): A source code editor
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): A simple web server utility for Visual Studio Code
+
+## Authors
+
+👤 **Fatima Zahir**
+
+- GitHub: [@githubhandle](https://github.com/Fatima-hub333)
+- Twitter: [@twitterhandle](https://twitter.com/Fatima_developr)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fatimaa-zahir/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Fatima-hub333/Ecommerce-Website/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
